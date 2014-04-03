@@ -1,6 +1,6 @@
 
 <!-- saved from url=(0106)https://raw.githubusercontent.com/YoungCoder/railsgists/6477c6f01b036efef2dd9217f4895772952d3c3f/readme.md -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2"><link rel="stylesheet" href="chrome-extension://ehnambpmkdhopilaccgfmojilolcglhn/markdownviewer.css"><link rel="stylesheet" href="chrome-extension://ehnambpmkdhopilaccgfmojilolcglhn/prettify.css"><style type="text/css"></style></head><body cz-shortcut-listen="true"><div id="markdown-container"><h1 id="0">Gist agregator</h1>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2"><link rel="stylesheet" href="chrome-extension://ehnambpmkdhopilaccgfmojilolcglhn/markdownviewer.css"><link rel="stylesheet" href="chrome-extension://ehnambpmkdhopilaccgfmojilolcglhn/prettify.css"><style type="text/css"></style></head><body cz-shortcut-listen="true"><div id="markdown-container"><h1 id="0">My Gists RoR</h1>
 <h2 id="3">Routes</h2>
 <pre><code>| Prefix Verb  | URI    | Pattern                   | Controller#Action |
 |--------------|--------|---------------------------|-------------------|
