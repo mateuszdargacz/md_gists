@@ -1,0 +1,13 @@
+= javascript_include_tag "jquery"
+= javascript_include_tag "jquery.inview.min"
+= javascript_include_tag "gist.js"
+= render 'index'
+%div{style: "width:300px;margin: 0 auto;"}
+  %h3
+
+#gists
+  .gists
+    = render :partial => 'shared/gists', :locals => { :gists => @gists }
+= link_to 'Load More Posts', gists_path(:page => @gists.next_page), :class => 'load-more-posts', :remote => true if @gists.next_page
+%br/
+

@@ -1,0 +1,33 @@
+<% if @gists.length > 0 %>
+    <h2>Results</h2>
+    <hr/>
+
+    <table class="table table-hovered">
+      <thead>
+      <tr>
+        <th>Snippet</th>
+        <th>Lang</th>
+        <th>Description</th>
+        <th colspan="3">Actions</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @gists.each do |gist| %>
+          <tr>
+            <td><%= raw Pygments.highlight( truncate(gist.snippet, :length => 12), lexer: gist.lang) %></td>
+            <td><%= gist.lang %></td>
+            <td><%= gist.description %></td>
+            <td><button class="btn btn-success"><%= link_to 'Show', gist %></button></td>
+            <td><button class="btn btn-info"><%= link_to 'Edit', edit_gist_path(gist) %></button></td>
+            <td><button class="btn btn-warning"><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+<% else if @gists.length == 0 %>
+        <div class="alert alert-info">
+          <strong>No gists found.</strong>
+        </div>
+    <% end end %>

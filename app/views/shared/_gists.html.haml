@@ -1,0 +1,20 @@
+%section.responsiveSnippet
+  %div.row
+    %div.col-md-12
+      %table.table.table-bordered
+        %thead
+          %tr
+            %th Snippet Preview
+            %th Lang
+            %th Description
+            %th Actions
+        - @gists.each do |gist|
+          %tr
+            %td= raw Pygments.highlight(gist.snippet.squish[0,30]+" ... ", lexer: gist.lang)
+            %td
+              %h4= gist.lang
+            %td= gist.description
+            %td
+              = link_to 'Show', gist,class:'btn btn-success'
+              = link_to 'Edit', edit_gist_path(gist),class:'btn btn-primary'
+              = link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' },class:'btn btn-warning'

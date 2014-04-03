@@ -4,12 +4,25 @@ class GistsController < ApplicationController
   # GET /gists
   # GET /gists.json
   def index
-    @gists = Gist.all
+    #@gists = Gist.all
+    #@gists = Gist.paginate(page: params[:page], per_page: 8)
+    @gists = Gist.paginate(:page => params[:page]).search(params[:search])
+    respond_to do |format|
+      format.html
+      format.js
+    end
+
   end
+
 
   # GET /gists/1
   # GET /gists/1.json
   def show
+  end
+
+  # GET /gists/search
+  def search
+    @gists = Gist.search(params[:lang])
   end
 
   # GET /gists/new
@@ -62,13 +75,15 @@ class GistsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_gist
-      @gist = Gist.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_gist
+    @gist = Gist.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def gist_params
-      params.require(:gist).permit(:snippet, :lang, :description)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def gist_params
+    params.require(:gist).permit(:snippet, :lang, :description)
+  end
 end
+
+

@@ -1,0 +1,4 @@
+$('.gists').append('#{escape_javascript(render partial: "shared/gists", :locals => { :gists => @gists })}');
+$('a.load-more-posts').attr('href', '#{gists_path page: @gists.next_page}');
+- unless(@gists.next_page)
+	$('a.load-more-posts').remove();

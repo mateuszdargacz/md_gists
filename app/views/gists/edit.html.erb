@@ -1,9 +1,5 @@
 <h1>Editing gist</h1>
 
 <%= render 'form' %>
-<div class="btn btn-danger">
-<%= link_to 'Show', @gist %> |
-</div>
-<div class="btn btn-primary">
-<%= link_to 'Back', gists_path %>
-</div>
+<%= link_to 'Show', @gist, :class => "btn btn-danger" %>
+<%= link_to 'Back', gists_path, :class => "btn btn-primary" %>

@@ -1,26 +1,10 @@
-<html>
-<head>
-  <%= render 'import_bs' %>
-</head>
-<body>
-<ul class="nav nav-tabs">
-  <li><%= link_to 'Back', gists_path %></li>
-  <li><%= link_to 'New Gist', new_gist_path %></li>
-  <li> <%= link_to 'Edit', edit_gist_path(@gist) %></li>
-</ul>
+
+
 <div class="row">
 <div class="alert alert-info">
 <div class="row">
-<div class="col-md-2">
-    <p id="notice"><%= notice %></p>
-</div>
-<div class="col-md-2">
-  <p>
-    <strong>Lang:</strong>
-    <%= @gist.lang %>
-  </p>
-</div>
-<div class="col-md-2">
+
+<div class="col-md-6">
 <p>
   <strong>Snippet:</strong>
 </p>
@@ -31,12 +15,13 @@
   <strong>Description:</strong><br/>
   <%= @gist.description %>
 </p>
+<p>
+  <strong>Lang:</strong>
+  <%= @gist.lang %>
+</p>
 </div>
 
 </div>
 </div>
 </div>
-
-</body>
-</html>
 
