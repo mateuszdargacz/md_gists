@@ -61,6 +61,7 @@ GEM
     mime-types (1.25.1)
     minitest (5.3.1)
     multi_json (1.9.2)
+    pg (0.15.1-x86-mingw32)
     polyglot (0.3.4)
     posix-spawn (0.3.8)
     pygments.rb (0.5.4)
@@ -120,7 +121,6 @@ GEM
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     will_paginate (3.0.5)
-    yajl-ruby (1.1.0)
     yajl-ruby (1.1.0-x86-mingw32)
 
 PLATFORMS
@@ -131,6 +131,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
+  pg
   pygments.rb
   quiet_assets
   rails (= 4.1.0.rc1)
