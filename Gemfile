@@ -7,7 +7,10 @@ gem 'rails', '4.1.0.rc1'
 group :development do
   gem 'sqlite3'
 end
-gem 'pg'
+group :production, :staging do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 # Use SCSS for stylesheets
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

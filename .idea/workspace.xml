@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8ad705ea-a413-46ad-8c93-37fd6ec3b00d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gists.iml" afterPath="$PROJECT_DIR$/.idea/gists.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gists.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +42,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="7" selection-start="218" selection-end="218" vertical-scroll-proportion="0.27517986" vertical-offset="0" max-vertical-offset="680">
+            <state line="12" column="3" selection-start="279" selection-end="279" vertical-scroll-proportion="0.36690646" vertical-offset="0" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -924,7 +926,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="218" selection-end="218" vertical-scroll-proportion="0.27517986" vertical-offset="0" max-vertical-offset="680">
+        <state line="12" column="3" selection-start="279" selection-end="279" vertical-scroll-proportion="0.36690646" vertical-offset="0" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
