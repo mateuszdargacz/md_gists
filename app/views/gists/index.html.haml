@@ -8,6 +8,6 @@
 #gists
   .gists
     = render :partial => 'shared/gists', :locals => { :gists => @gists }
-= link_to 'Load More Posts', gists_path(:page => @gists.next_page), :class => 'load-more-posts', :remote => true if @gists.next_page
+= link_to 'Load More Posts', gists_path(:page => @gists.next_page), :class => 'load-more-posts btn btn-info', :remote => true if @gists.next_page
 %br/
 

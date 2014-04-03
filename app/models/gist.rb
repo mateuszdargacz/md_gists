@@ -6,6 +6,6 @@ class Gist < ActiveRecord::Base
       self.all
     end
   end
-  self.per_page = 10
+  self.per_page = 4
 end
 
